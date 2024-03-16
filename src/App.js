@@ -31,9 +31,9 @@ const App = () => {
     };
 
     return (
-        <div style={{ width: "100%", display: "flex",flexDirection: "column" , justifyContent: "center", padding: '20%', backgroundColor: 'wheat' }}>
+        <div style={{ width: "100%", display: "flex",flexDirection: "column" , alignItems: "start", justifyContent: "center", padding: '20%' }}>
             <h4>Let in Touch</h4>
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+            <Form noValidate validated={validated} onSubmit={handleSubmit} style={{width: "50%", backgroundColor: 'wheat', padding: 20, borderRadius: 10}}>
                 <Row className="mb-3">
                     <Form.Group as={Col} md="4" controlId="name">
                         <Form.Label>Name</Form.Label>
