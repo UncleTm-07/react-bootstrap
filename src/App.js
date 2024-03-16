@@ -31,7 +31,8 @@ const App = () => {
     };
 
     return (
-        <div style={{ width: "100%", display: "flex", justifyContent: "center", padding: '20%' }}>
+        <div style={{ width: "100%", display: "flex",flexDirection: "column" , justifyContent: "center", padding: '20%', backgroundColor: 'wheat' }}>
+            <h4>Let in Touch</h4>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row className="mb-3">
                     <Form.Group as={Col} md="4" controlId="name">
@@ -58,7 +59,7 @@ const App = () => {
                 <Row className="mb-3">
                     <Form.Group as={Col} md="6" controlId="description">
                         <Form.Label>Description</Form.Label>
-                        <Form.Control as="textarea" aria-label="With textarea" />
+                        <Form.Control required as="textarea" aria-label="With textarea" />
                         <Form.Control.Feedback type="invalid">
                             Please provide a description.
                         </Form.Control.Feedback>
